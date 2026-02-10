@@ -67,10 +67,12 @@
     root.left = n2;
     root.right = n3;
 
-
-
-
-
+    字符串  String
+    StringBuilder res = new StringBuilder();
+    String s = "abc" ;  
+     res.trim()：             处理首尾空格
+     res.append("abc")        添加字符串 
+     s.substring(0,2)         substring 左闭右开,返回ab
 
 
 
