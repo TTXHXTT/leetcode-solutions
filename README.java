@@ -75,6 +75,8 @@
      s.substring(0,2)         substring 左闭右开,返回ab
 
 
+    Math方法
+    Math.abs                    取绝对值
 
 
 
