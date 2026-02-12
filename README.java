@@ -39,6 +39,17 @@
         PriorityQueue<Integer> heap =
               new PriorityQueue<>((a, b) -> b - a);
 
+    树集合  自动排序  自动去重
+    TreeSet<Integer> set = new TreeSet<>();
+        set.add(5);
+        set.remove(5);
+        set.contains(5);
+        set.first();   // 最小
+        set.last();    // 最大
+        set.pollFirst();   // 删除并返回最小
+        set.pollLast();    // 删除并返回最大
+
+
 
     哈希HashMap
     HashMap<Integer, String> map = new HashMap<>();
@@ -77,6 +88,7 @@
 
     Math方法
     Math.abs                    取绝对值
+
 
 
 
