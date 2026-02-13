@@ -84,10 +84,12 @@
      res.trim()：             处理首尾空格
      res.append("abc")        添加字符串 
      s.substring(0,2)         substring 左闭右开,返回ab
-
+     把 s 拆成单词数组
+     String[] words = s.split(" ");
 
     Math方法
     Math.abs                    取绝对值
+
 
 
 
