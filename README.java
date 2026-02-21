@@ -14,6 +14,15 @@
         ListNode curr = head.next;
 
 
+        栈
+        Stack<Integer> stack = new Stack<>();
+ 
+        stack.push(10);   入栈
+        stack.pop()       出栈
+        stack.isEmpty()
+        stack.peek()      查看栈顶元素
+
+
     双端队列
     Deque<Integer> deque = new ArrayDeque<>();
         方法	        作用	    失败时
@@ -89,6 +98,7 @@
 
     Math方法
     Math.abs                    取绝对值
+
 
 
 
