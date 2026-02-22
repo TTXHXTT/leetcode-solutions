@@ -84,6 +84,7 @@
     树  Tree
     TreeNode root = new TreeNode(1);
 
+    root.val=1;
     root.left = n2;
     root.right = n3;
 
@@ -98,6 +99,7 @@
 
     Math方法
     Math.abs                    取绝对值
+
 
 
 
