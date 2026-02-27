@@ -1,7 +1,23 @@
+
+//Let me explain my approach.
+
+
+
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-
         //创建一个新的HashMap
+
+        --For this  problem,
+        --I use a HashMap to store previously seen numbers and their indices.
+        --As I go through the array. I check if the number I need is already in the map.
+        --Because HashMap gives O(1) lookup, it helps reduce time complexity from O(n²) to O(n).
+        --If yes, I return the index.
+        --If not, I put the current number and its index into the map.   
+        --If no solution is found, I return an empty array.
+        --Time complexity is O(n) because we scan the array once.
+        --Space complexity is O(n) for the HashMap.
+            
         Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
         for(int i=0;i<nums.length;i++){
 
@@ -17,3 +33,4 @@ class Solution {
     }
 
 }
+
