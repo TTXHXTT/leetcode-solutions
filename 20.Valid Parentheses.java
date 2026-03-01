@@ -1,7 +1,7 @@
 class Solution {
     public boolean isValid(String s) {
 
-        I use a stack to keep track of opening brackets.
+        I use a stack to keep track of opening brackets.(括号)
         I also use a HashMap to store matching bracket pairs.
         The map stores closing brackets as keys and opening brackets as values.
         Then I go through the string character by character.
@@ -10,7 +10,7 @@ class Solution {
             If it’s a closing bracket, I check two things:
                 First, if the stack is empty.
                 Second, if the top of the stack matches the expected opening bracket.
-                If either condition fails, I return false.
+                If either fails, I return false.
             
         At the end, if the stack is empty, 
         it means all brackets are matched correctly.
