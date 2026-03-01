@@ -1,5 +1,24 @@
 class Solution {
     public boolean isValid(String s) {
+
+        I use a stack to keep track of opening brackets.
+        I also use a HashMap to store matching bracket pairs.
+        The map stores closing brackets as keys and opening brackets as values.
+        Then I go through the string character by character.
+        If the character is an opening bracket, I push it onto the stack.
+
+            If it’s a closing bracket, I check two things:
+                First, if the stack is empty.
+                Second, if the top of the stack matches the expected opening bracket.
+                If either condition fails, I return false.
+            
+        At the end, if the stack is empty, 
+        it means all brackets are matched correctly.
+
+        Time complexity is O(n), because we go through the string once.
+        Space complexity is O(n), because in the worst case we store all opening brackets in the stack.
+            
+            
         
         Stack<Character> st = new Stack<>();
         HashMap<Character,Character> map = new HashMap<>();
