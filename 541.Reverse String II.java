@@ -3,7 +3,7 @@ class Solution {
 
         First, I convert(转化) the string into a char array.
         I store the length of the string. And I use i as the starting index of each block.
-        The while loop ensures that the starting index does not go out of bounds.
+        The while loop ensures that the starting index does not go out of bounds.(越界)
         j is the end index of the reverse posetion. I use Math.min to avoid going out of bounds.
         Then I call the reverse function.reverse the characters between i and j.
         After that, I move i forward by 2k.
