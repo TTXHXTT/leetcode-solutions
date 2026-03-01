@@ -1,6 +1,22 @@
 class Solution {
     public String reverseStr(String s, int k) {
-        
+
+        First, I convert(转化) the string into a char array.
+        I store the length of the string. And I use i as the starting index of each block.
+        The while loop ensures that the starting index does not go out of bounds.
+        j is the end index of the reverse posetion. I use Math.min to avoid going out of bounds.
+        Then I call the reverse function.reverse the characters between i and j.
+        After that, I move i forward by 2k.
+
+            In the reverse function, I use two pointers.
+            While left pointer is smaller than right pointer, I swap the characters.
+
+        Finally, I convert the char array back to a string.
+
+        Time complexity is O(n), because each character is visited at most once.
+        Space complexity is O(n), because we convert the string to a char array.
+
+            
         //将字符串转成数组
         char[] ch = s.toCharArray();
 
