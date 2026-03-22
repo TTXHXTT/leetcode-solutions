@@ -2,6 +2,19 @@ class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode res = null;
 
+I use a pointer to build the reversed list.
+
+I go through the linked list.
+For each node, I save the next node,
+then reverse the pointer,
+and move pointer forward.
+
+At the end, I return the new head.
+
+Time is O(n), space is O(1).
+
+
+        
         while(head!=null){
             //用来存放后续链表，因为一会要断链
             ListNode curr = head.next;
