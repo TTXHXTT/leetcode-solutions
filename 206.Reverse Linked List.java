@@ -1,7 +1,8 @@
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode res = null;
-
+       
+        
+        
 I use a pointer to build the reversed list.
 
 I go through the linked list.
@@ -14,7 +15,9 @@ At the end, I return the new head.
 Time is O(n), space is O(1).
 
 
-        
+         
+        ListNode res = null;
+
         while(head!=null){
             //用来存放后续链表，因为一会要断链
             ListNode curr = head.next;
