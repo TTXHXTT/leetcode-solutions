@@ -1,4 +1,15 @@
 class Solution {
+
+I use binary search.
+
+If I find the target, I return its index.
+
+If not, when the range becomes invalid,
+I return i as the insert position.
+
+Time is O(log n), space is O(log n).
+
+    
     public int searchInsert(int[] nums, int target) {
              return s(target,0,nums.length-1,nums);
 
