@@ -1,4 +1,16 @@
 class Solution {
+
+I use memoization to optimize recursion.
+
+I store previously computed results in an array.
+
+If the value is already computed, I return it.
+Otherwise, I compute it recursively and store it.
+
+This avoids repeated calculations.
+
+Time is O(n), space is O(n).
+    
     //留存算过的数，防止重算
     int[] memo;
     public int fib(int n) {
