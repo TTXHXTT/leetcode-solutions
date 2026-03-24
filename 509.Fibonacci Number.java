@@ -1,6 +1,6 @@
 class Solution {
 
-I use memoization to optimize recursion.
+I use memoization to improve  recursion.
 
 I store previously computed results in an array.
 
