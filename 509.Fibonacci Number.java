@@ -7,7 +7,7 @@ I store previously computed results in an array.
 If the value is already computed, I return it.
 Otherwise, I compute it recursively and store it.
 
-This avoids repeated calculations.
+This avoids repeated compute .
 
 Time is O(n), space is O(n).
     
