@@ -1,5 +1,18 @@
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
+
+I use a deque to store indices of useful elements in the current window.
+
+First, I remove indices that are out of the window.
+Then I remove smaller values from the back,
+because they can never be the maximum if the current value is larger.
+
+After that, I add the current index.
+When the window is ready,
+the front of the deque is the maximum value for that window.
+
+Time is O(n), and space is O(k).
+        
         //创建存放答案数组
         int[] res = new int[nums.length-k+1];
 
