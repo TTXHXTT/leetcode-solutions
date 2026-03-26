@@ -1,5 +1,23 @@
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
+
+I use a fixed-size sliding window.
+
+First, I count the frequency of characters in s1.
+Then I move a window over s2
+and keep the character counts of the current window.
+
+If the window becomes larger than s1,
+I remove the leftmost character.
+
+When the window size is equal to s1.length(),
+I compare the two frequency arrays.
+If they are the same, I return true.
+
+Otherwise, after the loop, I return false.
+
+Time is O(n), space is O(1).
+        
         //s2如果长度不够直接判负
         if(s1.length()>s2.length()) return false;
         //创建s1的对比数组
