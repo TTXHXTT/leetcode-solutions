@@ -1,5 +1,20 @@
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
+
+I use a sliding window.
+
+I move the right pointer to expand the window
+and keep track of the current sum.
+
+When the sum becomes greater than or equal to the target,
+I try to shrink the window from the left
+and update the minimum length.
+
+At the end, if I never find a valid window, I return 0.
+Otherwise, I return the minimum length.
+
+Time is O(n), space is O(1).
+        
         
         int n = nums.length;
 
