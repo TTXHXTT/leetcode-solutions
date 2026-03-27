@@ -1,5 +1,22 @@
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
+
+
+I use a min heap to always get the smallest node among all lists.
+
+First, I put the head of each non-null list into the heap.
+Then I create a dummy node to build the result list.
+
+Each time, I pop the smallest node from the heap,
+attach it to the result list,
+and if that node has a next node, I push the next node into the heap.
+
+This way, the heap always keeps the smallest available node from each list.
+
+Finally, I return the merged list.
+
+Time is O(n log k), and space is O(k).
+    
         //如lists不存在或长度为0，返回null
         if(lists==null||lists.length==0) return null;
         //创建堆，存入各个链表头元素
