@@ -1,5 +1,20 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
+
+First, I count the frequency of each number using a HashMap.
+
+Then I use a min heap of size k,
+where each element stores the number and its frequency.
+
+I iterate through the map and push elements into the heap.
+If the heap size exceeds k, I remove the smallest frequency.
+
+This way, the heap keeps the top k frequent elements.
+
+Finally, I extract the result from the heap.
+
+Time is O(n log k), space is O(n).
+        
         //统计出现次数
         HashMap<Integer,Integer> frep = new HashMap<>();
         //遍历数组并存入
