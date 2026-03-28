@@ -6,6 +6,19 @@
 //立刻 DFS 把这坨岛屿的所有 '1' 全部标记为访问过（常用做法：直接改成 '0'）
 //继续扫，后面再遇到的同一座岛的 '1' 已经被改成 '0'，不会重复计数
 
+I use DFS to solve this problem.
+
+I go through the grid,
+and whenever I find a land cell,
+I increase the count and run DFS.
+
+In DFS, I mark all connected land as visited
+by turning them into water.
+
+This way, each island is counted only once.
+
+Time is O(mn), space is O(mn).
+
 class Solution {
     public int numIslands(char[][] grid) {
         int m=grid.length,n=grid[0].length;
