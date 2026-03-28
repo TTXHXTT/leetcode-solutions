@@ -1,18 +1,16 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+I use BFS with a queue.
+
+I process the tree level by level.
+For each level, I get the size of the queue
+and process all nodes in that level.
+
+I add their values to a list
+and push their children into the queue.
+
+At the end, I return all levels.
+
+Time is O(n), space is O(n).
+    
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
 
