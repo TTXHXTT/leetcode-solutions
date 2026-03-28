@@ -70,6 +70,14 @@
         map.size();              大小
         map.isEmpty();           判空
         Entry：Map 中的真实节点，setValue 直接改 Map
+        HashMap 是 Map 的一种实现，
+        Map.Entry 是 Map 里的一条“键值对”。
+        这是里面的一条 (key, value)
+
+        一个 Map 有三种常用遍历方式：
+        keySet()	所有 key
+        values()	所有 value
+        entrySet()	所有 (key, value) 对
           
     哈希HashSet
     HashSet<Integer> set = new HashSet<>();
