@@ -1,5 +1,18 @@
 class Solution {
     public int findMaxLength(int[] nums) {
+
+I use prefix sum and a HashMap.
+
+I treat 0 as -1 and 1 as +1.
+So if the same prefix sum appears again,
+the subarray between them has equal numbers of 0s and 1s.
+
+The map stores the first index of each prefix sum.
+When I see the same sum again,
+I calculate the length and update the answer.
+
+Time is O(n), space is O(n).
+        
         HashMap<Integer,Integer> map = new HashMap<>();
         //设置初始空前缀，确保在nums[-1]时出现过为sum为0的情况以便对比
         map.put(0,-1);
