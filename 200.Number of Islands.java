@@ -10,7 +10,7 @@ I use DFS to solve this problem.
 
 I go through the grid,
 and whenever I find a land cell,
-I increase the count and run DFS.
+I add the count and run DFS.
 
 In DFS, I mark all connected land as visited
 by turning them into water.
