@@ -1,5 +1,18 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
+
+I use prefix sum and a HashMap.
+
+The map stores prefix sums and how many times they appear.
+
+As I go through the array, I update the current prefix sum.
+Then I check if sum - k has appeared before.
+If yes, that means there are subarrays ending at the current position whose sum is k.
+
+After that, I store the current prefix sum in the map.
+
+Time is O(n), space is O(n).
+
         HashMap<Integer,Integer> map = new HashMap<>();
         //存入空前缀，例如在第一组pre-k=0时不遗漏
         map.put(0,1);
