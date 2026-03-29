@@ -6,8 +6,8 @@ class Solution {
         int count=0;
         //记录前缀和 = 从第 0 个数开始，一直加到当前位置的“累计账本”
         //pre[i] = nums[0] + ... + nums[i]
-        //pre[2] + pre[3] = pre[3] - pre[1]
-        //所以k = pre[r] - pre[x]  =>  pre[x] = pre[r] - k
+        //nums[i] + ... + nums[r] = pre[r] - pre[i-1]
+        //nums[2] + nums[3] = pre[3] - pre[1]
         //所有若想知道k有没有出现过，只需用现在的sum减去k看看曾经有没有sum相等
         int pre=0;
         for(int x:nums){
