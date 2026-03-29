@@ -6,6 +6,8 @@ I use prefix sum and a HashMap.
 The map stores the frequency of each remainder when prefix sums are divided by k.
 
 As I go through the array, I update the prefix sum and compute its remainder.
+if the remainder is negative,
+I add k to normalize it.
 If the same remainder has appeared before,
 that means the subarray between them is divisible by k.
 
