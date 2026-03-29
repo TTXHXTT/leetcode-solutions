@@ -9,7 +9,7 @@ the subarray between them has equal numbers of 0s and 1s.
 
 The map stores the first index of each prefix sum.
 When I see the same sum again,
-I calculate the length and update the answer.
+I count  the length and update the answer.
 
 Time is O(n), space is O(n).
         
