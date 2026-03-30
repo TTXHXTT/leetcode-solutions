@@ -1,5 +1,21 @@
 class Solution {
     public void setZeroes(int[][] matrix) {
+
+The idea is to use the first row and first column as markers.
+
+First, I check whether the first row and first column originally contain any zero.
+I store that information in two boolean variables.
+
+Then I scan the rest of the matrix.
+If a cell is zero, I mark its row and column
+by setting the first cell of that row and column to zero.
+
+After that, I use those markers to set the inner cells to zero.
+
+Finally, I handle the first row and first column separately.
+
+Time is O(mn), and space is O(1).
+        
         int m=matrix.length, n=matrix[0].length;
         //用来判断原始数据第一行和第一列是否有0
         boolean firstRow = false;
