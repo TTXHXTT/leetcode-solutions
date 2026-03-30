@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
 
-I use four pointers to represent the current boundaries.
+I use four pointers to represent the current borders.
 
 In each step, I traverse the top row,
 the right column,
