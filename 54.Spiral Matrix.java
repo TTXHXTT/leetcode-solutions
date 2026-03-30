@@ -1,5 +1,20 @@
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
+
+I use four pointers to represent the current boundaries.
+
+In each step, I traverse the top row,
+the right column,
+the bottom row,
+and the left column.
+
+After each step, I shrink the boundaries.
+
+I also check the boundaries
+to avoid duplicate traversal.
+
+Time is O(mn), space is O(1).
+        
         List<Integer> res = new ArrayList<>();
         
         //空矩阵直接返回空
