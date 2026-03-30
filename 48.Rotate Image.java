@@ -1,5 +1,17 @@
 class Solution {
     public void rotate(int[][] matrix) {
+
+I solve this in two steps.
+
+First, I transpose the matrix,
+which means swapping matrix[i][j] and matrix[j][i].
+
+Then I reverse each row.
+
+These two steps together rotate the matrix 90 degrees clockwise.
+
+Time is O(n²), and space is O(1).
+        
         int n=matrix.length;
         /* 
          * 第一步：沿主对角线进行转置
