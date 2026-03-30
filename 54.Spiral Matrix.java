@@ -3,7 +3,7 @@ class Solution {
 
 I use four pointers to represent the current borders.
 
-In each step, I traverse the top row,
+In each step, I go through the top row,
 the right column,
 the bottom row,
 and the left column.
