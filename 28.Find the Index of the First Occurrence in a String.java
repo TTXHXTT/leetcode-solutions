@@ -1,5 +1,17 @@
 class Solution {
     public int strStr(String haystack, String needle) {
+
+I use a brute force approach.
+
+I try every starting position in the haystack.
+For each position,
+I compare characters one by one with the needle.
+
+If all characters match, I return the index.
+Otherwise, I continue.
+
+Time is O(nm), space is O(1).
+        
         if(needle.length()==0) return 0;
         
         
