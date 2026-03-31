@@ -1,5 +1,20 @@
 class Solution {
     public String longestCommonPrefix(String[] strs) {
+
+I use the first string as a reference.
+
+I go through each character
+and compare it with the same position
+in all other strings.
+
+If there is a mismatch,
+I return the prefix so far.
+
+If all match,
+I return the whole first string.
+
+Time is O(nm), space is O(1).
+        
         if(strs==null||strs.length==0) return "";
         
         // 以第一个字符串作为基准
