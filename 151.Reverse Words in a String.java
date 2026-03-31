@@ -1,5 +1,18 @@
 class Solution {
     public String reverseWords(String s) {
+
+I scan the string from right to left.
+
+I skip spaces,
+then extract each word
+and append it to the result.
+
+This way, the words are added in reverse order.
+
+Finally, I trim the result.
+
+Time is O(n), space is O(n).
+        
         StringBuilder res = new StringBuilder();
 
         int i = s.length()-1;
