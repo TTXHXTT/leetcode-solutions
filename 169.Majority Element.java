@@ -1,5 +1,16 @@
 class Solution {
     public int majorityElement(int[] nums) {
+
+I use a HashMap to count the frequency of each number.
+
+As I go through the array,
+I update the count.
+
+If any number appears more than n/2 times,
+I return it immediately.
+
+Time is O(n), space is O(n).
+        
         HashMap<Integer,Integer> map = new HashMap<>();
 
         for(int i=0;i<nums.length;i++){
