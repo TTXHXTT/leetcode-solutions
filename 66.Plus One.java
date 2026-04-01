@@ -1,5 +1,18 @@
 class Solution {
     public int[] plusOne(int[] digits) {
+
+I start from the last digit
+and add one.
+
+If there is no carry, I return immediately.
+If there is a carry, I set it to zero
+and continue to the next digit.
+
+If all digits are 9,
+I create a new array with an extra digit.
+
+Time is O(n), space is O(1).
+        
         int n=digits.length;
         // 从最后一位开始处理
         for(int i=n-1;i>=0;i--){
