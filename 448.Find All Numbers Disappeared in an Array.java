@@ -1,5 +1,16 @@
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
+
+I use the input array itself for marking.
+
+For each number, I mark its corresponding index as negative.
+
+Then I scan the array again.
+If a position is still positive,
+it means that number is missing.
+
+Time is O(n), space is O(1).
+        
         List<Integer> res = new ArrayList<>();
         
         // 第一遍：标记出现过的数字
