@@ -1,5 +1,19 @@
 class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
+
+I go through each attack.
+
+For each one,
+I calculate how much time it contributes.
+
+If the next attack happens before the current poison ends,
+I only count the gap.
+Otherwise, I count the full duration.
+
+Finally, I add the last attack.
+
+Time is O(n), space is O(1).
+
         int res = 0;
         if(timeSeries==null||timeSeries.length==0) return res;
 
