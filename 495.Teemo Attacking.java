@@ -3,8 +3,8 @@ class Solution {
 
 I go through each attack.
 
-For each one,
-I calculate how much time it contributes.
+
+For each one, I coumpute how much time it adds.
 
 If the next attack happens before the current poison ends,
 I only count the gap.
