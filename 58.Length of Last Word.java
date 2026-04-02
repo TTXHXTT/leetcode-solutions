@@ -1,5 +1,15 @@
 class Solution {
     public int lengthOfLastWord(String s) {
+
+I scan the string from right to left.
+
+First, I skip spaces.
+Then I find the last word.
+
+The length is the distance between two pointers.
+
+Time is O(n), space is O(1).
+        
         int n=s.length();
         int i = s.length()-1;
        
