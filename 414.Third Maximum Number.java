@@ -1,5 +1,19 @@
 class Solution {
     public int thirdMax(int[] nums) {
+
+I use a TreeSet to keep elements in sorted order.
+
+As I go through the array, I add each number.
+If the size exceeds 3, I remove the smallest one.
+
+This way, the set always keeps the top 3 largest elements.
+
+If there are fewer than 3 distinct numbers,
+I return the maximum.
+Otherwise, I return the third maximum.
+
+Time is O(n), space is O(1).
+        
         TreeSet<Integer> set = new TreeSet<>();
 
         for(int x:nums){
