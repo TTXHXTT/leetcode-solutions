@@ -1,5 +1,16 @@
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
+
+I use an array to count characters in the magazine.
+
+Then I go through the ransom note.
+If a character is not available, I return false.
+Otherwise, I decrease the count.
+
+If all characters match, I return true.
+
+Time is O(n), space is O(1).
+        
         if (ransomNote == null || magazine == null) return false;
         
         // 只含小写字母，使用长度为26的数组存频次
