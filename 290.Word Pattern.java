@@ -1,5 +1,21 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
+
+First, I split the string into words.
+If the number of words does not match the pattern length, I return false.
+
+Then I use two hash maps.
+One maps characters to words,
+and the other maps words to characters.
+
+As I go through them,
+I make sure the mapping is consistent in both directions.
+
+If not, I return false.
+Otherwise, I update the maps.
+
+Time is O(n), space is O(n).
+        
         if(pattern==null||s==null) return false;
         
         // 把 s 拆成单词数组
