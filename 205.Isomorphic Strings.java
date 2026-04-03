@@ -1,6 +1,18 @@
 
 class Solution {
     public boolean isIsomorphic(String s, String t) {
+
+I use two arrays to track the last seen positions of characters.
+
+As I go through both strings,
+I check if the positions match.
+
+If not, the mapping is invalid.
+
+Otherwise, I update the positions.
+
+Time is O(n), space is O(1).
+        
         if(s.length()!=t.length()) return false;
         //使用ASCII来代替hashmap
         int[] mapS = new int[256];
