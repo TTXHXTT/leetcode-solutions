@@ -1,5 +1,18 @@
 public class Solution {
     public boolean repeatedSubstringPattern(String s) {
+
+I try every possible substring length.
+
+If the length can divide the whole string,
+I take that substring and repeat it enough times.
+
+Then I compare it with the original string.
+If they are the same, I return true.
+
+If none works, I return false.
+
+Time is O(n²), space is O(n).
+        
         int n = s.length(); // 字符串总长度
 
         // 枚举可能的“重复子串长度”
