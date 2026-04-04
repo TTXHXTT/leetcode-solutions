@@ -1,6 +1,19 @@
 class Solution {
     public int findLHS(int[] nums) {
 
+I use a HashMap
+to count the frequency of each number.First, I count the frequency of each number.
+
+Then I go through each number
+and check if x + 1 exists.
+
+If it does,
+I combine their counts
+and update the maximum length.
+
+Time is O(n), space is O(n).
+        
+
         // 用 HashMap 统计每个数字出现的次数
         // key: 数字
         // value: 该数字出现的频率
