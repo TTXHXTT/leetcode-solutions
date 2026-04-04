@@ -3,6 +3,7 @@ public class Solution {
 
 I try every possible substring length.
 
+Substrings length must be less than 2 over n.
 If the length can divide the whole string,
 I take that substring and repeat it enough times.
 
