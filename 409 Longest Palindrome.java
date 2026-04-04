@@ -1,6 +1,20 @@
 class Solution {
     public int longestPalindrome(String s) {
 
+First, I count the frequency of each character.
+
+If a count is even, I use all of it.
+If a count is odd, I use count - 1.
+
+At the end, if there is any odd count,
+I can put one character in the center.
+
+So the answer is the total usable pairs
+plus one center character if possible.
+
+Time is O(n), space is O(1).
+        
+
         // 用 ASCII 数组统计每个字符出现次数
         // 因为题目说包含大小写字母，所以 128 足够
         int[] count = new int[128];
