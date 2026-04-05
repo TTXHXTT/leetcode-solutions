@@ -1,5 +1,18 @@
 class Solution {
     public int calPoints(String[] operations) {
+
+I use a stack to simulate the operations.
+
+For each operation:
+if it's "+", I add the last two scores;
+if it's "D", I double the last score;
+if it's "C", I remove the last score;
+otherwise, I push the number.
+
+At the end, I sum all values in the stack.
+
+Time is O(n), space is O(n).
+        
         // 用栈来存储每一轮有效的得分
         Stack<Integer> stack = new Stack<>();
 
