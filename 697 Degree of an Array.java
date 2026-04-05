@@ -1,6 +1,22 @@
 class Solution {
     public int findShortestSubArray(int[] nums) {
 
+I use three hash maps
+to store frequency, first index, and last index.
+
+First, I go through the array
+and collect all this information.
+
+Then I find the degree of the array.
+
+After that,
+for each number with frequency equal to the degree,
+I calculate the length from its first index to its last index
+and keep the minimum one.
+
+Time is O(n), space is O(n).
+        
+
         // 统计频率
         HashMap<Integer, Integer> map = new HashMap<>();
 
